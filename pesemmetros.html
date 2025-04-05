@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Rafael Lemos dos Santos</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+
+        }
+
+        .box-nav {
+            background-color: #606B73;
+            padding: 5px;
+            border-radius: 15px;
+            color: #FFFFFF;
+        }
+
+        .box {
+            background: #7A7A7A;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        input {
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-size: 15px;
+            width: 50%;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            outline: none;
+            width: 50%;
+            background-color: rgb(239, 255, 238);
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            background-color: #ff002b;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box-nav">
+        <h1>Convertedor de Metros em Pés!!</h1>
+        <h2>Disciplina de Algoritmos</h2>
+    </div>
+    <div class="box">
+        <p>Insira o valor em metros!</p>
+        <input id="num" type="number" placeholder="Insira o Número">
+        <br><br>
+        <button onclick="go()">Enviar</button>
+    </div>
+
+</body>
+
+<script>
+    function go() {
+        var pes = 3.28084;
+        var metros = parseFloat(document.getElementById('num').value);
+        var conta = metros * pes;
+        alert(conta);
+    }
+</script>
+
+</html>
